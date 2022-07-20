@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'my__icon';
+  src: url('../font/my__icon.eot?87672564');
+  src: url('../font/my__icon.eot?87672564#iefix') format('embedded-opentype'),
+       url('../font/my__icon.woff2?87672564') format('woff2'),
+       url('../font/my__icon.woff?87672564') format('woff'),
+       url('../font/my__icon.ttf?87672564') format('truetype'),
+       url('../font/my__icon.svg?87672564#my__icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'my__icon';
+    src: url('../font/my__icon.svg?87672564#my__icon') format('svg');
+  }
+}
+*/
+[class$="icon-"]:before, [class*="icon- "]:before {
+  font-family: "my__icon";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.city-1icon-:before { content: '\e800'; } /* '' */
+.clockicon-:before { content: '\e801'; } /* '' */
+.phone_aiboliticon-:before { content: '\e802'; } /* '' */
+.youtubeicon-:before { content: '\e803'; } /* '' */
+.vkicon-:before { content: '\e804'; } /* '' */
+.fbicon-:before { content: '\e805'; } /* '' */
+.insticon-:before { content: '\e806'; } /* '' */
+.ellipse-3icon-:before { content: '\e807'; } /* '' */
+.hirurgicon-:before { content: '\e808'; } /* '' */
+.nevrolicon-:before { content: '\e809'; } /* '' */
+.dantisticon-:before { content: '\e80a'; } /* '' */
+.labicon-:before { content: '\e80b'; } /* '' */
+.ekzoticicon-:before { content: '\e80c'; } /* '' */
+.onkoicon-:before { content: '\e80d'; } /* '' */
+.terapicon-:before { content: '\e80e'; } /* '' */
+.dermoicon-:before { content: '\e80f'; } /* '' */
+.ophtolicon-:before { content: '\e810'; } /* '' */
+.vizualicon-:before { content: '\e811'; } /* '' */
+.cardioicon-:before { content: '\e812'; } /* '' */
+.endocricon-:before { content: '\e813'; } /* '' */
+.groomingicon-:before { content: '\e814'; } /* '' */
+.aptekaicon-:before { content: '\e815'; } /* '' */
+.ortopedicon-:before { content: '\e816'; } /* '' */
+.combinedicon-:before { content: '\e817'; } /* '' */
+.dogsicon-:before { content: '\e818'; } /* '' */
+.handicon-:before { content: '\e819'; } /* '' */
+.microscopeicon-:before { content: '\e81a'; } /* '' */
+.homeicon-:before { content: '\e81b'; } /* '' */
+.kolbicon-:before { content: '\e81c'; } /* '' */
+.piluleicon-:before { content: '\e81d'; } /* '' */
+.shapeicon-:before { content: '\e81e'; } /* '' */
