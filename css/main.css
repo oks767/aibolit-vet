@@ -2259,7 +2259,7 @@ a.scrolltotop-btn:before {
   overflow: hidden;
   outline: none;
   max-width: 100%;
-  background: url("/img/slider/slider-1.jpg");
+  background: url("../img/slider/slider-1.jpg");
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2276,7 +2276,7 @@ a.scrolltotop-btn:before {
   overflow: hidden;
   outline: none;
   max-width: 100%;
-  background: url("/img/slider/slider-2.jpg");
+  background: url("../img/slider/slider-2.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -2293,7 +2293,7 @@ a.scrolltotop-btn:before {
   overflow: hidden;
   outline: none;
   max-width: 100%;
-  background: url("/img/slider/slider-3.jpg");
+  background: url("../img/slider/slider-3.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -2304,7 +2304,7 @@ a.scrolltotop-btn:before {
   overflow: hidden;
   outline: none;
   max-width: 100%;
-  background: url("/img/slider/slider-4.jpg");
+  background: url("../img/slider/slider-4.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -2315,7 +2315,7 @@ a.scrolltotop-btn:before {
   overflow: hidden;
   outline: none;
   max-width: 100%;
-  background: url("/img/slider/slider-5.jpg");
+  background: url("../img/slider/slider-5.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -2326,7 +2326,7 @@ a.scrolltotop-btn:before {
   overflow: hidden;
   outline: none;
   max-width: 100%;
-  background: url("/img/slider/slider-6.jpg");
+  background: url("../img/slider/slider-6.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -3113,7 +3113,7 @@ a.scrolltotop-btn:before {
     position: absolute;
     bottom: -20px;
     right: -125px;
-    content: url("/img/bird.png");
+    content: url("../img/bird.png");
   }
 
   .about__item h4 {
