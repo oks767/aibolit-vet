@@ -1610,7 +1610,7 @@ a.h-phone {
 
 .site-footer {
   color: #fff;
-  background-color: #019ca4;
+  background-color: #59443F;
 }
 
 .footer__top {
@@ -1619,103 +1619,92 @@ a.h-phone {
   zoom: 1;
 }
 
-.footer-title {
+.top__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
   position: relative;
-  margin-bottom: 75px;
   padding: 0;
   color: #fff;
-  text-align: center;
+  float: left;
+  text-align: left;
   font-weight: 700;
   font-size: 30px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-}
-
-.footer-title::after {
-  content: '';
-  position: relative;
+  font-family: "SchoolBook", sans-serif;
+  line-height: 45px;
+  margin-left: 60px;
+  margin-bottom: 39px;
   display: block;
-  margin: 0 auto;
-  width: 51px;
-  height: 2px;
-  top: 27px;
-  background-color: #07bfbc;
-}
-
-.socio-footer {
-  list-style: none;
+  width: 212px;
   position: relative;
-  z-index: 100;
-  margin: 0 0 32px 0;
-  padding: 0;
-  text-align: center;
 }
 
-.socio-footer li {
-  display: inline-block;
-  margin: 0 7px;
+.footer__logo::after {
+  position: absolute;
+  top: -10px;
+  left: -100px;
+  content: url("/img/footer-logo.svg");
+  width: 100%;
+  height: 100%;
 }
 
-.socio-footer a {
-  color: #fff;
-  font-size: 1.5em;
-  text-decoration: none;
+.politics {
+  width: 192px;
+  margin-top: 39px;
 }
 
-.socio-footer a:hover {
-  color: #fff;
-  opacity: 0.7;
-  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
-}
-
-.footer__bottom {
-  padding-bottom: 50px;
-  color: #fff;
-  font-size: 1em;
-  letter-spacing: 1px;
-}
-
-.copy {
-  line-height: 1;
-  padding-bottom: 10px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.developer {
-  line-height: 1.5;
-  text-align: center;
-  font-size: 14px;
-}
-
-a.weblegko {
-  font-family: arial;
-  font-weight: 700;
-  font-size: 14px;
-  font-style: italic;
+.politics__link {
+  font-family: "Futura New", sans-serif;
+  line-height: 30px;
+  font-size: 20px;
   color: #fff;
 }
 
-a.weblegko .weblegko-red {
-  color: red;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+.footer__lists-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-a.weblegko .weblegko-white {
+.list {
+  list-style-type: none;
+  margin-top: 39px;
+}
+
+.list__link {
+  font-family: "Futura New", sans-serif;
+  line-height: 30px;
+  font-size: 20px;
   color: #fff;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
-a.weblegko:hover .weblegko-red {
+.list-icons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emails__link {
+  display: block;
+  font-family: "Futura New", sans-serif;
+  line-height: 30px;
+  font-size: 20px;
   color: #fff;
-}
-
-a.weblegko:hover .weblegko-white {
-  color: red;
+  margin: 0 auto;
 }
 
 .btn {
@@ -3315,14 +3304,6 @@ a.scrolltotop-btn:before {
     padding-left: 32px;
   }
 
-  .copy {
-    text-align: left;
-  }
-
-  .developer {
-    text-align: right;
-  }
-
   a.scrolltotop-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3462,6 +3443,10 @@ a.scrolltotop-btn:before {
 
   .city {
     font-size: 20px;
+  }
+
+  .footer__logo {
+    margin-left: 200px;
   }
 
   .slider__icons {
