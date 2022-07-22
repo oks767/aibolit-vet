@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Futura New';
   src: url("FuturaNewBold-Reg.eot");
-  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("./fonts/FuturaNewBold-Reg.woff") format("woff");
+  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("../../fonts/FuturaNewBold-Reg.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'Futura New';
   src: url("FuturaNewBook-Reg.eot");
-  src: local("Futura New Book Reg"), local("FuturaNewBook-Reg"), url("./fonts/FuturaNewBook-Reg.woff") format("woff");
+  src: local("Futura New Book Reg"), local("FuturaNewBook-Reg"), url("../../fonts/FuturaNewBook-Reg.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -2443,6 +2443,7 @@ a.scrolltotop-btn:before {
   position: relative;
   height: 500px;
   margin-bottom: 32px;
+  width: 100%;
 }
 
 .yandex-map-canvas {
