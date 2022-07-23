@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Futura New';
   src: url("FuturaNewBold-Reg.eot");
-  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("../../fonts/FuturaNewBold-Reg.woff") format("woff");
+  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("./fonts/FuturaNewBold-Reg.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'Futura New';
   src: url("FuturaNewBook-Reg.eot");
-  src: local("Futura New Book Reg"), local("FuturaNewBook-Reg"), url("../../fonts/FuturaNewBook-Reg.woff") format("woff");
+  src: local("Futura New Book Reg"), local("FuturaNewBook-Reg"), url("./fonts/FuturaNewBook-Reg.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -2729,7 +2729,7 @@ a.scrolltotop-btn:before {
 
 .history__link::after {
   position: absolute;
-  content: url("/img/Path.svg");
+  content: url("./img/Path.svg");
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -2800,7 +2800,7 @@ a.scrolltotop-btn:before {
 
 .icon-left::after {
   position: absolute;
-  content: url("/img/left.svg");
+  content: url("./img/left.svg");
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2843,7 +2843,7 @@ a.scrolltotop-btn:before {
 
 .icon-right::after {
   position: absolute;
-  content: url("/img/right.svg");
+  content: url("./img/right.svg");
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
