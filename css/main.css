@@ -2729,7 +2729,7 @@ a.scrolltotop-btn:before {
 
 .history__link::after {
   position: absolute;
-  content: url("./img/Path.svg");
+  content: url("/img/Path.svg");
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -2800,7 +2800,7 @@ a.scrolltotop-btn:before {
 
 .icon-left::after {
   position: absolute;
-  content: url("./img/left.svg");
+  content: url("/img/left.svg");
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2843,7 +2843,7 @@ a.scrolltotop-btn:before {
 
 .icon-right::after {
   position: absolute;
-  content: url("./img/right.svg");
+  content: url("/img/right.svg");
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -3226,6 +3226,191 @@ a.scrolltotop-btn:before {
   transition: 0.5s;
 }
 
+.wrapper__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.left__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "SchoolBook", sans-serif;
+  color: #080606;
+  font-weight: 400;
+}
+
+.left__link {
+  font-size: 10px;
+  line-height: 20px;
+  font-family: "Futura New", sans-serif;
+  color: #C3B9B5;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.right {
+  width: 100%;
+}
+
+.right__title {
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "SchoolBook", sans-serif;
+  color: #080606;
+  font-weight: 400;
+}
+
+.name {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  color: #080606;
+  font-family: "Futura New", sans-serif;
+  position: relative;
+  width: 219px;
+  margin-bottom: 10px;
+}
+
+.name::after {
+  position: absolute;
+  top: 0;
+  left: -60px;
+  content: url("/img/avatar-slider.png");
+  border-radius: 50%;
+}
+
+.date {
+  display: block;
+}
+
+.slider-terap {
+  position: relative;
+}
+
+.slider-prev {
+  display: none;
+}
+
+.slide-terap {
+  max-width: 320px;
+  padding: 70px 0;
+  padding-right: 20px;
+}
+
+.terap-next {
+  position: absolute !important;
+  top: 43% !important;
+  left: 62.6%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: #FFC59E;
+  -webkit-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+}
+
+.terap-prev {
+  display: none;
+}
+
+.terap-card {
+  padding: 20px 51px 20px 86px;
+  height: 150px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.terap-info__title {
+  font-family: "SchoolBook", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #080606;
+  font-weight: 400;
+}
+
+.terap-info__text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #C3B9B5;
+  font-weight: 400;
+  font-family: "Futura New", sans-serif;
+}
+
+.terap-info__title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #080606;
+  font-family: "SchoolBook", sans-serif;
+  font-weight: 400;
+}
+
+.info__img {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.service-slider {
+  background: #EDE9E8;
+  position: relative;
+  padding-left: 100px;
+}
+
+.all__services {
+  font-family: "SchoolBook", sans-serif;
+  font-weight: 400;
+  color: #080606;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 80px;
+}
+
+.service-next {
+  position: absolute;
+  top: 40%;
+  left: 88.5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: #FFC59E;
+  -webkit-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-prev {
+  display: none;
+}
+
+.service-slide + .slick-slide {
+  display: block;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0.7;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.service-slide + .slick-active {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
 @media (min-width: 480px) {
   .post-navigation .all-news-nav {
     padding: 0;
@@ -3393,6 +3578,24 @@ a.scrolltotop-btn:before {
   .about__item {
     margin-bottom: 70px;
     margin-left: 20px;
+  }
+
+  .left__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .left__link {
+    font-size: 20px;
+  }
+
+  .right {
+    margin-left: 70px;
+  }
+
+  .right__title {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -3580,6 +3783,35 @@ a.scrolltotop-btn:before {
   .pop-up__card {
     width: 400px;
     margin: 0 auto;
+  }
+
+  .wrapper__inner {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .left__title {
+    font-size: 80px;
+    line-height: 110px;
+  }
+
+  .left__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .right {
+    margin-left: 200px;
+  }
+
+  .right__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .terap-info__title {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
