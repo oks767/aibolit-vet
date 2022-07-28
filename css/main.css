@@ -3293,8 +3293,8 @@ a.scrolltotop-btn:before {
   position: relative;
 }
 
-.slider-prev {
-  display: none;
+.terap-prev {
+  display: none !important;
 }
 
 .slide-terap {
@@ -3359,10 +3359,14 @@ a.scrolltotop-btn:before {
   margin-bottom: 50px;
 }
 
-.service-slider {
+.service-wrap {
   background: #EDE9E8;
+}
+
+.service-slider {
   position: relative;
   padding-left: 100px;
+  padding-top: 70px;
 }
 
 .all__services {
@@ -3372,11 +3376,12 @@ a.scrolltotop-btn:before {
   font-size: 30px;
   line-height: 40px;
   margin-left: 80px;
+  padding-top: 40px;
 }
 
 .service-next {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 88.5%;
   width: 40px;
   height: 40px;
@@ -3388,7 +3393,7 @@ a.scrolltotop-btn:before {
 }
 
 .service-prev {
-  display: none;
+  display: none !important;
 }
 
 .service-slide + .slick-slide {
@@ -3409,6 +3414,118 @@ a.scrolltotop-btn:before {
       -ms-transform: scale(1);
           transform: scale(1);
   opacity: 1;
+}
+
+.pop-up-profile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(8, 6, 6, 0.5);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transform: 1s;
+      -ms-transform: 1s;
+          transform: 1s;
+}
+
+.pop-up--active {
+  opacity: 1;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.pop-up__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+.registr {
+  margin: 0 auto;
+  display: block;
+  outline: none;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  background: #fff;
+  margin-bottom: 32px;
+  padding: 10px;
+}
+
+.more {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  border: 1px solid transparent;
+  background: #EDE9E8;
+  border-radius: 33.5px;
+  padding: 23px 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Futura New", sans-serif;
+}
+
+.code {
+  width: 50px;
+  height: 57px;
+  background: #FFFFFF;
+  /* brown/bg */
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+}
+
+.pop-up__middle {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  width: 250px;
+}
+
+.pop-up__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pop-up__inner {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+#card__one {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#card__two {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 @media (min-width: 480px) {
@@ -3812,6 +3929,11 @@ a.scrolltotop-btn:before {
   .terap-info__title {
     font-size: 30px;
     line-height: 40px;
+  }
+
+  .pop-up__inner {
+    width: 400px;
+    margin: 0 auto;
   }
 }
 

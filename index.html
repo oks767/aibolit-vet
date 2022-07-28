@@ -47,7 +47,7 @@
                     <img class="logo__img-mini" src="./img/logo.png" alt="logo">
                 </span>
                 <ul id="main-menu" class="sf-menu">
-                    <li><a href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                    <li><a class="modal" href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
 
                     <li><a href="#">О НАС</a>
                         <ul class="list-sub-menu">
@@ -477,6 +477,49 @@
                     </div>
                 </div>
             </section>
+            <section class="pop-up-profile">
+    <div class="pop-up__inner">
+    <div id="card__one" class="pop-up__card">
+        <div class="pop-up__top">
+            
+            <div class="pop-up__title">
+                Вход или 
+регистрация
+            </div>
+            <img src="./img/close.svg" alt="" class="close">
+        </div>
+        <div class="pop-up__middle">
+            <input id="phone" class="registr" type="text">
+        </div>
+        <div class="pop-up__bottom">
+            <button class="more">
+                ДАЛЕЕ
+            </button>
+        </div>
+    </div>
+    <div id="card__two" class="pop-up__card">
+        <div class="pop-up__top">
+            
+            <div class="pop-up__title">
+                Вход или 
+регистрация
+            </div>
+            <img src="./img/close.svg" alt="" class="close">
+        </div>
+        <div class="pop-up__middle">
+            <input id="code-1" class="code" type="text" tabindex="1">
+            <input id="code-2" class="code" type="text" tabindex="2">
+            <input id="code-3" class="code" type="text" tabindex="3">
+            <input id="code-4" class="code" type="text" tabindex="4">
+        </div>
+        <div class="pop-up__bottom">
+            <button class="more">
+                ГОТОВО
+            </button>
+        </div>
+    </div>
+</div>
+</section>
         </div>
 
         <footer id="colophon" class="site-footer" role="contentinfo">
@@ -559,6 +602,7 @@
 
     <script src="./js/vendors.js"></script>
 <script src="./js/main.js"></script>
+
 
 </body>
 
