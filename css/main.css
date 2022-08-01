@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Futura New';
   src: url("FuturaNewBold-Reg.eot");
-  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("./fonts/FuturaNewBold-Reg.woff") format("woff");
+  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("../fonts/FuturaNewBold-Reg.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -11,7 +11,14 @@
 @font-face {
   font-family: 'Futura New';
   src: url("FuturaNewBook-Reg.eot");
-  src: local("Futura New Book Reg"), local("FuturaNewBook-Reg"), url("./fonts/FuturaNewBook-Reg.woff") format("woff");
+  src: local("Futura New Book Reg"), local("FuturaNewBook-Reg"), url("../fonts/FuturaNewBook-Reg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SchoolBook';
+  src: url("../fonts/SchoolBook Regular") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -1036,9 +1043,8 @@ a.h-phone {
   width: 100%;
   z-index: 1000;
   background: #fff;
-  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   padding: 5px 0;
+  border: none;
 }
 
 .nb-inner {
@@ -1155,7 +1161,6 @@ a.h-phone {
 .nb-search__box {
   display: none;
   position: absolute;
-  border: 1px solid #07bfbc;
   background-color: #019ca4;
   top: 100%;
   right: -96px;
@@ -1171,7 +1176,6 @@ a.h-phone {
   right: 129px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #07bfbc;
 }
 
 .nb-search.opened .nb-search__btn i::before {
@@ -3152,7 +3156,7 @@ a.scrolltotop-btn:before {
 
 .pop-up--active {
   opacity: 1;
-  z-index: 0;
+  z-index: 3000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3432,7 +3436,7 @@ a.scrolltotop-btn:before {
 
 .pop-up--active {
   opacity: 1;
-  z-index: 0;
+  z-index: 3000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3652,6 +3656,315 @@ a.scrolltotop-btn:before {
   display: none !important;
 }
 
+.img {
+  width: auto;
+}
+
+.right__img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.special__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 909px;
+}
+
+.special__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.special__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 442px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.card-left {
+  width: auto;
+}
+
+.card-left img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.name-doctor {
+  font-family: "Futura New", sans-serif;
+  color: #080606;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.doctor {
+  font-family: "Futura New", sans-serif;
+  color: #080606;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.right__img {
+  margin-bottom: 30px;
+}
+
+.right__list {
+  margin-bottom: 50px;
+}
+
+.right__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.img__right {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.left__avatar {
+  width: auto;
+}
+
+.left__avatar .img {
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.record {
+  display: block;
+  border: none;
+  outline: none;
+  background: #FFC59E;
+  -webkit-box-shadow: 0px 4px 20px #FFC59E;
+          box-shadow: 0px 4px 20px #FFC59E;
+  border-radius: 33.5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Futura New", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 24px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.responcive-button {
+  background-color: transparent;
+  display: block;
+  border: 2px solid transparent;
+  outline: none;
+  color: #FFC59E;
+  font-family: "Futura New", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  padding: 5px;
+}
+
+.responcive-button:hover {
+  border-bottom: 2px solid #FFC59E;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.black-doctor {
+  font-family: "Futura New", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  display: block;
+  color: #59443F;
+  margin: 20px 0;
+  max-width: 689px;
+}
+
+.course-slider {
+  margin-bottom: 50px;
+}
+
+.course-slide__card {
+  background: #FFFFFF;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.course-next {
+  position: absolute;
+  top: 30%;
+  right: -5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: #FFC59E;
+  -webkit-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+}
+
+.course-prev {
+  display: none !important;
+}
+
+.name-user {
+  display: block;
+  font-family: "Futura New", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  display: block;
+  color: #59443F;
+  text-align: left;
+}
+
+.responsive__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  max-width: 909px;
+}
+
+.left-card {
+  width: auto;
+  margin-right: 10px;
+}
+
+.left-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.record-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.record-card:hover {
+  border: 1px solid #C3B9B5;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.record-card__text {
+  color: #080606;
+  font-family: "Futura New", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.passport {
+  background: #FFFFFF;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  color: #59443F;
+  padding: 5px 10px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.tel {
+  background: #FFFFFF;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  color: #59443F;
+  padding: 5px 10px;
+  margin-bottom: 24px;
+  margin-right: 25px;
+  width: 45%;
+}
+
+.date {
+  background: #FFFFFF;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  color: #59443F;
+  padding: 5px 10px;
+  margin-bottom: 24px;
+  width: 45%;
+}
+
+.text-area {
+  background: #FFFFFF;
+  border: 1px solid #EDE9E8;
+  border-radius: 20px;
+  color: #59443F;
+  padding: 5px 10px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 @media (min-width: 480px) {
   .post-navigation .all-news-nav {
     padding: 0;
@@ -3838,6 +4151,10 @@ a.scrolltotop-btn:before {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .responsive__card {
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -3878,7 +4195,6 @@ a.scrolltotop-btn:before {
             box-shadow: none;
     background-color: #fff;
     border-top: 1px solid #f1f1f1;
-    border-bottom: 1px solid #f1f1f1;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2307bfbc' fill-opacity='0.64' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   }
 
@@ -4066,6 +4382,21 @@ a.scrolltotop-btn:before {
     left: 0;
     content: url("../img/newpets.svg");
   }
+
+  .special__card {
+    margin-left: 25px;
+    padding: 30px;
+  }
+
+  .name-doctor {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .doctor {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -4138,6 +4469,10 @@ a.scrolltotop-btn:before {
     position: absolute;
     top: -90px;
     right: -300px;
+  }
+
+  .responsive__card {
+    max-width: 909px;
   }
 }
 
